@@ -1,0 +1,38 @@
+{
+  "appId": "com.yesflow.mobilespeech",
+  "appName": "speechui-test",
+  "webDir": "www",
+  "$schema": false,
+  "npmClient": "npm",
+  "server": {
+    "iosScheme": "capacitor",
+    "androidScheme": "http",
+    "allowNavigation": [
+      "login.microsoftonline.com",
+      "api.botframework.com",
+      "token.botframework.com",
+      "directline.botframework.com",
+      "token.yesflow.com",
+      "login.yesflow.com",
+      "reportviewer.nucor.com"
+    ],
+    "cleartext": true
+  },
+  "plugins": {
+    "Keyboard": {
+      "resize": "native"
+    },
+    "SplashScreen": {
+      "launchShowDuration": 0,
+      "autoHide": true
+    },
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
+    }
+  },
+  "cordova": {}
+}

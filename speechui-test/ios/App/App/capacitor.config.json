@@ -1,0 +1,6 @@
+{
+	"appId": "com.yesflow.mobilespeech",
+	"appName": "speechui-test",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
