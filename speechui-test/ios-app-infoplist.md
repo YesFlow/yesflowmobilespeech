@@ -50,14 +50,14 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-    <key>NSMicrophoneUsageDescription</key>
-      <string>Microphone should be used for using wakeword</string>
-      <key>NSSpeechRecognitionUsageDescription</key>
-      <string>Speech to Text Wakeword</string>
-      <key>UIBackgroundModes</key>
-      <array>
-          <string>audio</string>
-          <string>fetch</string>
-      </array>
+  <key>NSMicrophoneUsageDescription</key>
+	<string>Microphone should be used for using wakeword</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech to Text Wakeword</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>fetch</string>
+	</array>
 </dict>
 </plist>

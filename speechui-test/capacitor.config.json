@@ -5,18 +5,9 @@
   "$schema": false,
   "npmClient": "npm",
   "server": {
-    "iosScheme": "capacitor",
-    "androidScheme": "http",
-    "allowNavigation": [
-      "login.microsoftonline.com",
-      "api.botframework.com",
-      "token.botframework.com",
-      "directline.botframework.com",
-      "token.yesflow.com",
-      "login.yesflow.com",
-      "reportviewer.nucor.com"
-    ],
-    "cleartext": true
+    "cleartext": true,
+    "originalCleartext": true,
+    "url": "http://localhost:8100"
   },
   "plugins": {
     "Keyboard": {
