@@ -5,9 +5,7 @@
 	"$schema": false,
 	"npmClient": "npm",
 	"server": {
-		"cleartext": true,
-		"originalCleartext": true,
-		"url": "http://localhost:8100"
+		"cleartext": true
 	},
 	"plugins": {
 		"Keyboard": {

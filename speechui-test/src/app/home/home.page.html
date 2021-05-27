@@ -6,32 +6,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item>
-        <ion-label>{{time}}</ion-label>
-    </ion-item>
-    <ion-item >
-      <ion-label class="ion-text-wrap">{{currentState}}</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label class="ion-text-wrap">{{finalResults}}</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label class="ion-text-wrap">{{currentText}}</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label class="ion-text-wrap">{{finalText}}</ion-label>
-    </ion-item>
-  </ion-list>
-</ion-content>
-<ion-footer class="ion-padding">
-  <ion-buttons>
-    <ion-button (click)="startRecording()">Start</ion-button>
-    <ion-button (click)="stopRecording()">Stop</ion-button>
-    <ion-button (click)="addNow()">Add</ion-button>
-    <ion-button (click)="cancelLast()">Undo</ion-button>
-    <ion-button (click)="finish()">Finish</ion-button>
-  </ion-buttons>
+<ion-content>
+  <ion-label>Speech Results</ion-label>
+  <ion-textarea [value]="finalText" cols="20" rows="20" style="border: 1px solid black;">
 
-</ion-footer>
+  </ion-textarea>
+
+
+
+  <app-speech-button
+    [vertical]="'bottom'"
+    [horizontal]="'center'"
+    [slot]="'fixed'"
+    (speechResultsEvent)="onSpeechResultsEvent($event)"
+  ></app-speech-button>
+<!--
+  <ion-button (click)="launchSpeech($event)"></ion-button> -->
+
+</ion-content>
+<!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button [disabled]="micDisabled">
+    <ion-icon name="mic" (click)="launchSpeech($event)"></ion-icon>
+  </ion-fab-button>
+</ion-fab> -->
+
